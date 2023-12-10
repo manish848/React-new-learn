@@ -2,8 +2,9 @@ import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
+import First from './first.jsx' 
 
-function App() {
+function App() { 
   const [count, setCount] = useState(0)
 
   return (
@@ -29,7 +30,11 @@ function App() {
     //     Click on the Vite and React logos to learn more
     //   </p>
     // </>
-    <h1>Manish bhai ab vite me hai</h1>
+//we have t return only one element so we can make one div and inside that div we can call as many things as we want to avoid this the react gave us <> </>  this is called fragment in the react and this is really very very important to remeberr thee thing
+    <>
+       <h1>Manish bhai ab vite me hai</h1>
+    <First/> 
+    </>
   )
 }
 

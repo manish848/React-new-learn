@@ -1,5 +1,6 @@
 
 import './App.css';
+import First from './First'
 
 function App() {
   return (
@@ -19,7 +20,11 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    <h1>Aag lagani hai bhai react me </h1>
+    <>
+     <h1>Aag lagani hai bhai react me </h1>
+    <First/>
+    </>
+   
   );
 }
 
