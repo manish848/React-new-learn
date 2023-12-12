@@ -16,8 +16,19 @@ function App() {
     console.log(value)
     // value = value+1; 
     // setcounter(value)
-    if(value<=191)
-    setcounter(value+1) // the value is here incremented whenever we click onto it, but this value is not updated there so we need to take care of this thing , now how we do that that is really very important
+    setcounter(value+1)
+    // setcounter(value+1)
+    // setcounter(value+1)
+    // setcounter(value+1)
+    // this will update the value just once , as the react will do the things in batches due to the fibre so to avoid this we will use the precounter that will give us the updated value and it will only come when we will update that value
+   
+    setcounter(prevalue => prevalue+1)
+    setcounter((prevalue) => { return prevalue+1}) //correct way to write it
+    setcounter(prevalue => prevalue+1)
+    setcounter(prevalue => prevalue+1)
+    setcounter(prevalue => prevalue+1)
+ 
+     // the value is here incremented whenever we click onto it, but this value is not updated there so we need to take care of this thing , now how we do that that is really very important
     // so the problem is the ui updation and the ui updation in the react does not work the way we want it to work 
     // it works accordin to it so it will be updated at many places 
     // now there are many counter so each time if we use the dom we have to take out many elements and then we have to update all of them so this is the basic and most worst problem with the dom
