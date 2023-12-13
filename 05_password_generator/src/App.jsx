@@ -41,6 +41,18 @@ function App() {
       passwordGenerator()
     }, [length, numberallowed, characterallowed, passwordGenerator]) //this is used that when we need to run this function , so when the dependcies changes we need to call that function
 
+//useEffect(() => {
+  //Runs on the first render
+  //And any time any dependency value changes
+// }, [prop, state]);
+
+//useEffect(() => {
+  //Runs only on the first render
+//}, []);
+
+//useEffect(() => {
+  //Runs on every render
+//});
 
 
   return (
