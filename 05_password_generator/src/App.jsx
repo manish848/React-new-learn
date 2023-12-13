@@ -32,8 +32,8 @@ function App() {
     const passwordRef = useRef(null)
 
     const copyPasswordToClipboard = useCallback(() => { // we can remove usecallback this is not needed
-      passwordRef.current?.select();
-      passwordRef.current?.setSelectionRange(0, 999);
+      passwordRef.current?.select();// this is onlu used for this
+      passwordRef.current?.setSelectionRange(0, 999);// this is onlu used for this
       window.navigator.clipboard.writeText(password)
     }, [password])
   
